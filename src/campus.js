@@ -9,7 +9,7 @@ type State = {
     zoom: number,
 }
 
-export default class SimpleExample extends Component<{}, State> {
+export default class CampusMap extends Component<{}, State> {
     state = {
         lat: 40.1095876,
         lng: -88.2275806,
