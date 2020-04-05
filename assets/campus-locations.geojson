@@ -1,0 +1,163 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#13294b",
+        "fill-opacity": 0.65,
+        "id": 0,
+        "name": "Iken North",
+        "type": "Region",
+        "marker-size": "",
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.23853969573975,
+              40.10400806525872
+            ],
+            [
+              -88.23853433132172,
+              40.10229704419184
+            ],
+            [
+              -88.23727905750275,
+              40.102309353849606
+            ],
+            [
+              -88.23729515075682,
+              40.10253503051373
+            ],
+            [
+              -88.2335239648819,
+              40.102567856147964
+            ],
+            [
+              -88.23354542255402,
+              40.10403268395285
+            ],
+            [
+              -88.23853969573975,
+              40.10400806525872
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Nugent Hall",
+        "type": "URH",
+        "id": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2372522354126,
+          40.10361006180087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Weston Hall",
+        "type": "URH",
+        "id": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23559999465942,
+          40.103019207012714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Wassaja Hall",
+        "type": "URH",
+        "id": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23823392391205,
+          40.10352799894271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Hopkins Hall",
+        "type": "URH",
+        "id": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23748290538788,
+          40.10256375294455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Ludgren Hall",
+        "type": "URH",
+        "id": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23402285575867,
+          40.10396293096303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e84a27",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Barton Hall",
+        "type": "URH",
+        "id": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23401749134064,
+          40.10329001609428
+        ]
+      }
+    }
+  ]
+}
