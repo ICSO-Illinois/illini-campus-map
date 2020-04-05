@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// @flow
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Leaflet from 'leaflet'
+import React, { StrictMode } from 'react'
 
-export default App;
+import CampusMap from './campus'
+
+Leaflet.Icon.Default.imagePath =
+    '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/images/';
+
+const App = () => (
+    <StrictMode>
+        <h1>Illini Campus Map</h1>
+        <CampusMap />
+    </StrictMode>
+);
+
+export default App
