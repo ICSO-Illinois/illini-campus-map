@@ -13,7 +13,8 @@
         "name": "Iken North",
         "type": "Region",
         "marker-size": "",
-        "marker-color": ""
+        "marker-color": "",
+        "popupContent": "美国传统宿舍，这里属于Iken的北区"
       },
       "geometry": {
         "type": "Polygon",
@@ -59,7 +60,8 @@
         "marker-symbol": "",
         "name": "Nugent Hall",
         "type": "URH",
-        "id": 1
+        "id": 1,
+        "popupContent": "一般面向于高年级本科学生，只对有残疾或者是运动员身份的低年级本科学生开放，大一新生申请基本没有希望"
       },
       "geometry": {
         "type": "Point",
@@ -77,7 +79,8 @@
         "marker-symbol": "",
         "name": "Weston Hall",
         "type": "URH",
-        "id": 2
+        "id": 2,
+        "popupContent": "整座楼都是Exploration Living-learning Community(Exploration LLC)"
       },
       "geometry": {
         "type": "Point",
@@ -113,7 +116,8 @@
         "marker-symbol": "",
         "name": "Hopkins Hall",
         "type": "URH",
-        "id": 4
+        "id": 4,
+        "popupContent": "类似于Weston，该宿舍楼内有LEADS Living-Learning Community (LEADS LLC)"
       },
       "geometry": {
         "type": "Point",
@@ -131,7 +135,8 @@
         "marker-symbol": "",
         "name": "Ludgren Hall",
         "type": "URH",
-        "id": 5
+        "id": 5,
+        "popupContent": "男生宿舍，该宿舍楼内没有电梯，也没有空调，但是价格相较其他宿舍都更便宜"
       },
       "geometry": {
         "type": "Point",
@@ -149,7 +154,8 @@
         "marker-symbol": "",
         "name": "Barton Hall",
         "type": "URH",
-        "id": 6
+        "id": 6,
+        "popupContent": "女生宿舍，和Ludgren 一样，也没有空调和电梯"
       },
       "geometry": {
         "type": "Point",
