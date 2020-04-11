@@ -16,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "sudo rsync -a ./build* /var/www/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
