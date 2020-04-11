@@ -46,11 +46,20 @@ export default class CampusMap extends Component<{}, State, MarkerOption> {
 
     urhMarker: CircleMarkerOption = {
         radius: 8,
-        fillColor: "#ff7800",
-        color: "#000000",
+        fillColor: "#00e849",
+        color: "#000",
         weight: 1,
         opacity: 1,
-        fillOpacity: 0.8
+        fillOpacity: 1.0
+    };
+
+    pchMarker: CircleMarkerOption = {
+        radius: 8,
+        fillColor: "#1F4096",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 1.0
     };
 
     regionMarker: PolygonOption = {
@@ -63,8 +72,16 @@ export default class CampusMap extends Component<{}, State, MarkerOption> {
     };
 
     addMarkers(feature, latLng) {
-        console.log("Marker:" + latLng);
-        return L.circleMarker(latLng, this.urhMarker);
+        switch (feature.properties.type) {
+            case 'URH':
+                console.log("URH Marker: " + latLng);
+                return L.circleMarker(latLng, this.urhMarker);
+            case 'PCH':
+                console.log("PCH Marker " + latLng);
+                return L.circleMarker(latLng, this.pchMarker);
+            default:
+                return L.marker(latLng);
+        }
     }
 
     determinePolygonStyle(feature) {
@@ -99,6 +116,7 @@ export default class CampusMap extends Component<{}, State, MarkerOption> {
                     pointToLayer={this.addMarkers}
                     style={this.determinePolygonStyle}
                     onEachFeature={this.addPopUps}
+                    // markersInheritOptions={true}
                 />
                 <Marker position={position}>
                     <Popup>
