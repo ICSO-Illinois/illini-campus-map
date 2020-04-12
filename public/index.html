@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta http-equiv="content-language" content="en,cn" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <html lang="en-us">
 <head>
   <meta charset="utf-8" />
@@ -11,7 +12,12 @@
   <link rel="stylesheet" href="//unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
   <style>
     body {
-      padding-bottom: 30px;
+      padding: 0;
+      margin: 0;
+    }
+    html, body, #map {
+      height: 100%;
+      width: 100vw;
     }
     h1,
     h2,
