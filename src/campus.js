@@ -99,7 +99,37 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
     addPopUps(feature, layer) {
         console.log("Adding popups");
         if(feature.properties && feature.properties.popupContent) {
-            layer.bindPopup(feature.properties.popupContent);
+            const shortenedPopup = `${feature.properties.popupContent.substring(0, 100)}...(具体请见详细介绍)`;
+            layer.bindPopup(function (layer) {
+                if (!feature.properties.url) {
+                    return L.Util.template(
+                            '<h1>' +
+                            '{name}' +
+                            '</h1>' +
+                            '<p align="justify">{popupContent}</p>',
+                            feature.properties
+                        )
+                }
+                return feature.properties.popupContent.length > 100 ?
+                    L.Util.template(
+                        '<h1>' +
+                        '<a href="{url}" target="_blank">' +
+                        '{name}' +
+                        '</a>' +
+                        '</h1>' +
+                        '<p align="justify">' + shortenedPopup + '</p>',
+                        feature.properties
+                    ) :
+                    L.Util.template(
+                        '<h1>' +
+                        '<a href="{url}" target="_blank">' +
+                        '{name}' +
+                        '</a>' +
+                        '</h1>' +
+                        '<p align="justify">{popupContent}</p>',
+                        feature.properties
+                    )
+            });
         }
     }
 
