@@ -30,7 +30,7 @@ type PolygonOption = {
     fillOpacity: number
 }
 
-export default class CampusMap extends Component<{}, State, MarkerOption> {
+export default class CampusMap extends Component<{}, State, CircleMarkerOption> {
     constructor(props: Props, context: *): void {
         super(props, context);
         this.determinePolygonStyle = this.determinePolygonStyle.bind(this);
