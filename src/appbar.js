@@ -17,13 +17,14 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import MapIcon from '@material-ui/icons/Map';
+import HomeIcon from '@material-ui/icons/Home';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import BuildIcon from '@material-ui/icons/Build';
 import clsx from "clsx";
 
-import CampusMap from './campus'
-
-const drawerWidth = 240;
+const drawerWidth = 200;
+const navBarIcons = [<MapIcon />, <HomeIcon />, <MenuBookIcon />, <BuildIcon />];
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -67,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
+        position: 'initial',
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -129,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SearchAppBar() {
+export default function SearchAppBar(mainComponents) {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
@@ -188,18 +190,20 @@ export default function SearchAppBar() {
                 </div>
                 <Divider />
                 <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                    {['地图', '宿舍介绍', '转专业', '开发中'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                            <ListItemIcon>
+                                {navBarIcons[index]}
+                            </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
                 </List>
                 <Divider />
                 <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                    {['开发中', '开发中', '敬请期待'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                            <ListItemIcon>{<BuildIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
@@ -210,8 +214,9 @@ export default function SearchAppBar() {
                     [classes.contentShift]: open,
                 })}
             >
-                <h1>Illini Campus Map</h1>
-                <CampusMap/>
+                {mainComponents.map((component) => (
+                    <div>{component}</div>
+                ))}
             </main>
         </div>
     );
