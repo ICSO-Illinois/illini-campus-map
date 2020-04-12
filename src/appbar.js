@@ -21,10 +21,11 @@ import MapIcon from '@material-ui/icons/Map';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import BuildIcon from '@material-ui/icons/Build';
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import clsx from "clsx";
 
 const drawerWidth = 200;
-const navBarIcons = [<MapIcon />, <HomeIcon />, <MenuBookIcon />, <BuildIcon />];
+const navBarIcons = [<MapIcon />, <HomeIcon />, <MenuBookIcon />, <QuestionAnswerIcon/>];
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -67,8 +68,7 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         flexGrow: 1,
-        padding: theme.spacing(3),
-        position: 'initial',
+        // padding: theme.spacing(3),
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -190,7 +190,7 @@ export default function SearchAppBar(mainComponents) {
                 </div>
                 <Divider />
                 <List>
-                    {['地图', '宿舍介绍', '转专业', '开发中'].map((text, index) => (
+                    {['地图', '宿舍介绍', '转专业', 'FAQ'].map((text, index) => (
                         <ListItem button key={text}>
                             <ListItemIcon>
                                 {navBarIcons[index]}
@@ -201,7 +201,7 @@ export default function SearchAppBar(mainComponents) {
                 </List>
                 <Divider />
                 <List>
-                    {['开发中', '开发中', '敬请期待'].map((text, index) => (
+                    {['开发中', '施工中', '敬请期待'].map((text) => (
                         <ListItem button key={text}>
                             <ListItemIcon>{<BuildIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
