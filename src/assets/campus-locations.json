@@ -777,7 +777,7 @@
         "fill-opacity": 0.5,
         "name": "College of ACES",
         "type": "Region",
-        "popupContent": "农园大本营，只是大致位置，实际上农院还有更多地盘",
+        "popupContent": "农院大本营，只是大致位置，实际上农院还有更多地盘",
         "url": "https://aces.illinois.edu/"
       },
       "geometry": {
