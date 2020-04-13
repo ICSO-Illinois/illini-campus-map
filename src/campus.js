@@ -45,17 +45,18 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
     };
 
     urhMarker: CircleMarkerOption = {
-        radius: 8,
-        fillColor: "#00e849",
+        radius: 30,
+        fillColor: "#D50032",
         color: "#000",
         weight: 1,
         opacity: 1,
-        fillOpacity: 1.0
+        fillOpacity: 0.8
     };
 
     pchMarker: CircleMarkerOption = {
-        radius: 8,
-        fillColor: "#1F4096",
+        radius: 30,
+        fillColor: "#E84A27",
+        fill: true,
         color: "#000",
         weight: 1,
         opacity: 1,
@@ -75,10 +76,10 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
         switch (feature.properties.type) {
             case 'URH':
                 console.log("URH Marker: " + latLng);
-                return L.circleMarker(latLng, this.urhMarker);
+                return L.circle(latLng, this.urhMarker);
             case 'PCH':
                 console.log("PCH Marker " + latLng);
-                return L.circleMarker(latLng, this.pchMarker);
+                return L.circle(latLng, this.pchMarker);
             default:
                 return L.marker(latLng);
         }

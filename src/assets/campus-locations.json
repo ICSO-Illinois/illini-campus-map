@@ -635,6 +635,7 @@
         "marker-symbol": "",
         "name": "LAR",
         "type": "URH",
+        "popupContent": "与Allen Hall相连但比Allen Hall大，学习室很方便，在LLC可以免费租自行车",
         "url": "https://housing.illinois.edu/Living-Options/Residence-Halls/Undergraduate-Halls/Lincoln-Avenue"
       },
       "geometry": {
@@ -642,62 +643,6 @@
         "coordinates": [
           -88.2200539112091,
           40.10412295242174
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
-        "name": "Urbana North",
-        "type": "Region",
-        "popUpContent": "Allen Hall和LAR的所在地，临近CRCE，距离Main Quad和UGL也很近"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.22076737880707,
-              40.1049763938445
-            ],
-            [
-              -88.22136282920837,
-              40.10463173609721
-            ],
-            [
-              -88.22135210037231,
-              40.10426656110267
-            ],
-            [
-              -88.22175443172455,
-              40.10425835490048
-            ],
-            [
-              -88.22174906730652,
-              40.10417218971791
-            ],
-            [
-              -88.22172224521636,
-              40.1032695002925
-            ],
-            [
-              -88.21926534175871,
-              40.10335566661837
-            ],
-            [
-              -88.21928679943083,
-              40.10498870301747
-            ],
-            [
-              -88.22076737880707,
-              40.1049763938445
-            ]
-          ]
         ]
       }
     },
