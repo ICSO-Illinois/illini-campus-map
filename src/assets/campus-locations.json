@@ -539,7 +539,7 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "name": "Armory Hall",
+        "name": "Armory House",
         "url": "https://www.armoryhouse.com/",
         "type": "PCH",
         "popupContent": "Hello大家好，我是UIUC大三商院的学生，这是我在Armory House住的第三年，同时我也是armory的RA(resident advisor)， 很高兴可以为新生和家长介绍Armory。 Armory分为Suite building和Main building，两栋楼都有单人间和双人间提供。 我大一住在Main deluxe double，大二之后搬到Suite Single，个人感觉uite体验更好因为房间使用面积更大。 Main房间里有床，学习桌，衣柜，很大的窗户，以及全身镜。Suite除了这些，房间里还有一个洗手池，在房间里洗脸卸妆都很方便。Armory所有双人间都是和另一个双人间（也就是4个人）共用洗手间，洗手间里有两个洗手池和两个镜子，人多但用起来很方便；所有单人间都是2个房间（2人）共用洗手间，也就是说两个房间是可以从洗手间内相通的。用洗手间的时候可以把室友的门反锁，如果用完忘记开了室友也可以从自己的房间把锁打开的。Armory有清洁service，清洁工每周会来打扫洗手间。  很多人选宿舍时候最关心的是食堂，Armory的食堂其实很Chinese-friendly，这个是我很喜欢的一点，经常会有饺子炒面米饭。如果对食堂有任何意见，可以写下放在意见箱里。曾经我很不满意食堂只有素馅饺子，有一次在意见箱里提了一下，下周就见到肉馅饺子了。食堂是自助形式，不限量，水平忽高忽低，有时候会很好吃，有时很一般，但是每顿饭都有special meal可以在cook station点。Special meal包括炒面、蛋炒饭、汉堡薯条鸡蛋卷等等可以选择，有时会有意大利面。 Meal plan可以选择每学期200次，250次或300次。推荐选择200次, 因为根本吃不完哦。 像我每学期会刷150次meal plan已经算很多了，周围朋友很多只刷70次。因为食堂吃到后面都会腻，大家周末通常都会选择点外卖或者去绿街吃饭店。此外，Armory 的meal plan和另外两个pch Newman以及Hendrick house是可以通用的，我和朋友有时候吃腻了armory经常会去newman吃饭。 Armory main有4个洗衣机，suite有3个，都可以免费使用，对比很多university housing洗衣机需要投币才能用，这一点要好很多，比如很多时候我衣服喜欢分颜色洗，就会觉得免费的洗衣机很方便。Main有1个公共厨房，suite有2个公共厨房，都有冰箱，平时点的外卖可以放在冰箱里，上面写上自己名字和房间号就可以。如果嫌麻烦可以在亚马逊上买个小冰箱放在自己房间里。宿舍里电热水壶和冰箱这些电器都是允许放的。Armory有地下停车场，车位的数量一般都是足够的。  Armory的office对中国学生极其友善，4个Resident Advisor里有2个中国RA，RA学长学姐可以在学习生活上为新生提供帮助。Armory经常会举办很多节日活动, 比如春节联欢会大家一起教美国同学包饺子、写汉字，万圣节cosplay等等， 都很有意思。  关于Armory的一个小缺点，可能是它在兄弟会附近晚上会被party吵到，但是个人感觉没有那么夸张啦，至少我在宿舍学习的时候从来没有因为这个被打扰过。还有就是suite楼的构造，房间外面就是公共活动区域，有人会觉得比较吵，但是宿舍每天11点后quiet hours就不允许有人待在那里了，所以晚上不会影响休息。"
@@ -832,7 +832,7 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "name": "College of Engineering",
+        "name": "Grainger College of Engineering",
         "type": "Region",
         "popupContent": "工学院大部分建筑的所在地",
         "url": "https://grainger.illinois.edu/"
@@ -890,6 +890,84 @@
               40.116316300912594
             ]
           ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "Green Street",
+        "type": "Line",
+        "popupContent": "绿街，学校中心位置一条非常繁华的街道，有各种公寓、餐饮店、超市、酒吧等场所",
+        "url": "https://storied.illinois.edu/greenstreet/"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -88.24216604232788,
+            40.11019528345137
+          ],
+          [
+            -88.22886228561401,
+            40.110310160165106
+          ],
+          [
+            -88.22742462158202,
+            40.11035939298299
+          ],
+          [
+            -88.22646975517273,
+            40.11048247487187
+          ],
+          [
+            -88.22210311889648,
+            40.11053170756506
+          ],
+          [
+            -88.21941018104553,
+            40.1105809402226
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Walgreens",
+        "type": "General",
+        "popupContent": "校园内的一家连锁超市，虽然规模较小但是日用品齐全"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.23272466659546,
+          40.11000245424573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "County Market",
+        "type": "General",
+        "popupContent": "校外的一下较大的市场",
+        "url": "https://www.mycountymarket.com/shop/store-locator/champaign-stoughton/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2339745759964,
+          40.11314098930738
         ]
       }
     }

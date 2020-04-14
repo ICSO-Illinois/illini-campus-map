@@ -45,8 +45,9 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
     };
 
     urhMarker: CircleMarkerOption = {
-        radius: 30,
-        fillColor: "#D50032",
+        radius: 10,
+        fillColor: "#d50032",
+        fill: true,
         color: "#000",
         weight: 1,
         opacity: 1,
@@ -54,8 +55,8 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
     };
 
     pchMarker: CircleMarkerOption = {
-        radius: 30,
-        fillColor: "#E84A27",
+        radius: 10,
+        fillColor: "#e84A27",
         fill: true,
         color: "#000",
         weight: 1,
@@ -68,7 +69,7 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
         color: "#000000", // The color of the stroke
         opacity: 1, // The opacity of the stroke
         fill: true, // Whether to fill the polygon with color
-        fillColor: "#13294b",
+        fillColor: "#0455A4",
         fillOpacity: 0.7
     };
 
@@ -76,10 +77,10 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
         switch (feature.properties.type) {
             case 'URH':
                 console.log("URH Marker: " + latLng);
-                return L.circle(latLng, this.urhMarker);
+                return L.circleMarker(latLng, this.urhMarker);
             case 'PCH':
                 console.log("PCH Marker " + latLng);
-                return L.circle(latLng, this.pchMarker);
+                return L.circleMarker(latLng, this.pchMarker);
             default:
                 return L.marker(latLng);
         }
@@ -90,6 +91,8 @@ export default class CampusMap extends Component<{}, State, CircleMarkerOption> 
         switch (feature.properties.type) {
             case 'Region':
                 return this.regionMarker;
+            case 'Line':
+                return {color: "#D50032"};
             case 'College':
                 return {fillColor: "#1f4096"}; // Temporary
             default:
