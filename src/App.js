@@ -16,8 +16,8 @@ const App = () => (
         {SearchAppBar([])}
         <Container maxWidth={'md'}>
             <h1 align={'left'}>校园地标与（部分）宿舍一览</h1>
+            <div align={'center'}>本站已退役，请访问我们的主站<a href={'https://www.icso.cc'}>以获取更多内容</a> </div>
             <div><CampusMap /></div>
-            <h1>宿舍介绍</h1>
         </Container>
     </StrictMode>
 );
